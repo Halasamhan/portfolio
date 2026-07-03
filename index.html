@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hala Samhan — Business Solutions Developer</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- Nav -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-glass">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#hero" class="font-space font-bold text-lg tracking-tight flex items-center gap-2 group">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-600 to-crm-500 flex items-center justify-center text-white text-xs font-bold group-hover:scale-110 transition-transform">H</div>
+                <span class="text-gray-900">Hala<span class="gradient-text-dual">.</span></span>
+            </a>
+            <div class="hidden md:flex items-center gap-7">
+                <a href="#about" class="text-[13px] font-medium text-gray-500 hover:text-brand-700 transition-colors">About</a>
+                <a href="#expertise" class="text-[13px] font-medium text-gray-500 hover:text-brand-700 transition-colors">Expertise</a>
+                <a href="#experience" class="text-[13px] font-medium text-gray-500 hover:text-brand-700 transition-colors">Experience</a>
+                <a href="#projects" class="text-[13px] font-medium text-gray-500 hover:text-brand-700 transition-colors">Projects</a>
+                <a href="#education" class="text-[13px] font-medium text-gray-500 hover:text-brand-700 transition-colors">Education</a>
+                <a href="#contact" class="btn-primary text-[13px] py-2.5 px-6"><span>Hire Me</span><span class="iconify" data-icon="lucide:arrow-up-right" data-width="14"></span></a>
+            </div>
+            <button id="menuBtn" class="md:hidden w-10 h-10 rounded-xl border border-brand-100 bg-brand-50 flex items-center justify-center text-brand-700"><span class="iconify" data-icon="lucide:menu" data-width="18"></span></button>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-brand-50 px-6 py-5 space-y-3">
+            <a href="#about" class="block text-sm font-medium text-gray-600 hover:text-brand-700 py-2">About</a>
+            <a href="#expertise" class="block text-sm font-medium text-gray-600 hover:text-brand-700 py-2">Expertise</a>
+            <a href="#experience" class="block text-sm font-medium text-gray-600 hover:text-brand-700 py-2">Experience</a>
+            <a href="#projects" class="block text-sm font-medium text-gray-600 hover:text-brand-700 py-2">Projects</a>
+            <a href="#education" class="block text-sm font-medium text-gray-600 hover:text-brand-700 py-2">Education</a>
+            <a href="#contact" class="btn-primary w-full justify-center text-sm py-3 mt-2">Hire Me</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="relative min-h-screen flex items-center pt-16 overflow-hidden">
+        <div class="blob w-[500px] h-[500px] bg-brand-200 -top-40 -right-40 float-slow"></div>
+        <div class="blob w-[400px] h-[400px] bg-crm-100 bottom-20 -left-40 float-reverse"></div>
+        <div class="blob w-[300px] h-[300px] bg-fuchsia-100 top-1/2 right-1/4 float-slow" style="animation-delay:2s"></div>
+        <div class="absolute top-32 right-20 w-16 h-16 rounded-2xl border-2 border-brand-200 float-slow opacity-0-4 hidden lg:block" style="animation-delay:1s"></div>
+        <div class="absolute top-1/2 right-40 w-4 h-4 rounded-full bg-crm-400 float-reverse hidden lg:block"></div>
+        <div class="absolute bottom-40 left-20 w-8 h-8 rounded-full bg-fuchsia-300 float-slow hidden lg:block" style="animation-delay:3s"></div>
+
+        <div class="relative max-w-6xl mx-auto px-6 w-full">
+            <div class="grid lg:grid-cols-5 gap-12 lg:gap-16 items-center py-20 lg:py-0">
+                <div class="lg:col-span-3">
+                    <div class="reveal">
+                        <div class="inline-flex items-center gap-2-5 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 mb-8">
+                            <span class="w-2 h-2 rounded-full bg-green-500 pulse-dot"></span>
+                            <span class="text-xs font-semibold text-brand-700">Available for opportunities</span>
+                        </div>
+                    </div>
+                    <h1 class="reveal font-space text-4xl md:text-5xl lg:text-[3.6rem] font-bold tracking-tight leading-[1.1] mb-6 text-gray-900">
+                        I'm <span class="gradient-text-warm" id="typewriter"></span><span class="typewriter-cursor"></span>
+                    </h1>
+                    <p class="reveal text-base md:text-lg text-gray-500 max-w-xl mb-10 leading-relaxed">
+                        Business Information Systems graduate with hands-on expertise in <span class="text-crm-700 font-medium">Microsoft Dynamics 365 CRM</span>, <span class="text-brand-700 font-medium">Power Apps</span>, and <span class="text-fuchsia-600 font-medium">Frontend Development</span> — turning business requirements into practical digital solutions.
+                    </p>
+                    <div class="reveal flex flex-wrap gap-4 mb-14">
+                        <a href="#expertise" class="btn-primary"><span>Explore My Skills</span><span class="iconify" data-icon="lucide:arrow-down" data-width="15"></span></a>
+                        <a href="#contact" class="btn-outline"><span class="iconify text-brand-400" data-icon="lucide:message-circle" data-width="15"></span><span>Let's Talk</span></a>
+                    </div>
+                    <div class="reveal flex flex-wrap gap-10 md:gap-14 pt-8 border-t border-gray-100">
+                        <div><div class="text-3xl md:text-4xl font-space font-bold text-gray-900 counter" data-target="3.93" data-decimal="true">0</div><div class="text-[10px] text-gray-400 mt-1 uppercase tracking-[.15em] font-bold">GPA</div></div>
+                        <div><div class="text-3xl md:text-4xl font-space font-bold text-gray-900"><span class="counter" data-target="4">0</span><span class="gradient-text-dual">+</span></div><div class="text-[10px] text-gray-400 mt-1 uppercase tracking-[.15em] font-bold">Roles</div></div>
+                        <div><div class="text-3xl md:text-4xl font-space font-bold text-gray-900"><span class="counter" data-target="2">0</span><span class="gradient-text">+</span></div><div class="text-[10px] text-gray-400 mt-1 uppercase tracking-[.15em] font-bold">Projects</div></div>
+                        <div><div class="text-3xl md:text-4xl font-space font-bold text-gray-900"><span class="counter" data-target="2">0</span></div><div class="text-[10px] text-gray-400 mt-1 uppercase tracking-[.15em] font-bold">Languages</div></div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 flex justify-center reveal-scale">
+                    <div class="relative">
+                        <div class="photo-frame">
+                            <div class="relative w-[260px] h-[320px] md:w-[300px] md:h-[370px] rounded-[22px] overflow-hidden bg-brand-50">
+                                <img src="https://z-cdn-media.chatglm.cn/files/deb621d3-9d07-4fc4-835e-eab8db943dc6.jpeg?auth_key=1883100514-e1eb5497ea46447187e6c16bed5084c6-0-877da1b4965f0fe6457d6c5f1eefbce1" alt="Hala Samhan" class="w-full h-full object-cover object-top">
+                                <div class="absolute inset-0 bg-gradient-to-t from-brand-900-30 via-transparent to-transparent"></div>
+                                <div class="absolute bottom-4 left-4 right-4">
+                                    <div class="flex items-center gap-3 bg-white/90 backdrop-blur-lg rounded-xl p-3 border border-white/50 shadow-lg">
+                                        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-brand-600 to-crm-500 flex items-center justify-center"><span class="iconify text-white" data-icon="lucide:layers" data-width="16"></span></div>
+                                        <div><div class="text-xs font-bold text-gray-900">Business Solutions Dev</div><div class="text-[10px] text-gray-500">CRM · Power Apps · React</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -top-4 -right-8 bg-white rounded-2xl p-3 shadow-xl shadow-brand-200-50 border border-brand-50 float-slow hidden md:flex items-center gap-2" style="animation-delay:.5s">
+                            <div class="w-8 h-8 rounded-lg bg-crm-100 flex items-center justify-center"><span class="iconify text-crm-600" data-icon="mdi:microsoft-dynamics-365" data-width="16"></span></div>
+                            <div><div class="text-[10px] text-gray-400 font-medium">CRM</div><div class="text-sm font-bold text-gray-900">Dynamics 365</div></div>
+                        </div>
+                        <div class="absolute -bottom-3 -left-6 bg-white rounded-2xl p-3 shadow-xl shadow-brand-200-50 border border-brand-50 float-reverse hidden md:flex items-center gap-2">
+                            <div class="w-8 h-8 rounded-lg bg-green-100 flex items-center justify-center"><span class="iconify text-green-600" data-icon="lucide:trending-up" data-width="16"></span></div>
+                            <div><div class="text-[10px] text-gray-400 font-medium">GPA</div><div class="text-sm font-bold text-gray-900">3.93 / 4.0</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+            <span class="text-[10px] text-gray-400 tracking-[.2em] uppercase font-bold">Scroll</span>
+            <div class="w-6 h-10 rounded-full border-2 border-brand-200 flex justify-center pt-2"><div class="w-1-5 h-2-5 rounded-full bg-brand-500 animate-bounce" style="width:6px;height:10px;"></div></div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="py-6 bg-gradient-to-r from-brand-50 via-crm-50 to-brand-50 border-y border-brand-100 overflow-hidden">
+        <div class="flex whitespace-nowrap"><div class="marquee-track flex items-center gap-8 text-sm font-semibold text-brand-300">
+            <span>DYNAMICS 365 CRM</span><span class="text-crm-300">✦</span><span>POWER APPS</span><span class="text-crm-300">✦</span><span>POWER BI</span><span class="text-crm-300">✦</span><span>REACT.JS</span><span class="text-crm-300">✦</span><span>JAVASCRIPT</span><span class="text-crm-300">✦</span><span>POWER AUTOMATE</span><span class="text-crm-300">✦</span><span>DATAVERSE</span><span class="text-crm-300">✦</span><span>SQL</span><span class="text-crm-300">✦</span><span>HTML5 / CSS3</span><span class="text-crm-300">✦</span><span>MODEL-DRIVEN APPS</span><span class="text-crm-300">✦</span><span>DYNAMICS 365 CRM</span><span class="text-crm-300">✦</span><span>POWER APPS</span><span class="text-crm-300">✦</span><span>POWER BI</span><span class="text-crm-300">✦</span><span>REACT.JS</span><span class="text-crm-300">✦</span><span>JAVASCRIPT</span><span class="text-crm-300">✦</span><span>POWER AUTOMATE</span><span class="text-crm-300">✦</span><span>DATAVERSE</span><span class="text-crm-300">✦</span><span>SQL</span><span class="text-crm-300">✦</span><span>HTML5 / CSS3</span><span class="text-crm-300">✦</span><span>MODEL-DRIVEN APPS</span><span class="text-crm-300">✦</span>
+        </div></div>
+    </div>
+
+    <!-- About -->
+    <section id="about" class="relative py-24 md:py-32 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="reveal-left relative order-2 md:order-1">
+                    <div class="relative rounded-[22px] overflow-hidden bg-gradient-to-br from-brand-50 to-crm-50 p-2 shadow-2xl shadow-brand-200-30">
+                        <div class="rounded-[18px] overflow-hidden">
+                            <img src="https://z-cdn-media.chatglm.cn/files/deb621d3-9d07-4fc4-835e-eab8db943dc6.jpeg?auth_key=1883100514-e1eb5497ea46447187e6c16bed5084c6-0-877da1b4965f0fe6457d6c5f1eefbce1" alt="Hala Samhan" class="w-full aspect-[4/5] object-cover object-top">
+                        </div>
+                        <div class="absolute top-6 left-6 bg-white/90 backdrop-blur-md rounded-xl px-4 py-2 shadow-lg border border-white/50"><span class="text-xs font-bold text-brand-700">🇪🇬 Cairo, Egypt</span></div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 reveal-right">
+                    <div class="section-label mb-6">About Me</div>
+                    <h2 class="font-space text-3xl md:text-4xl font-bold tracking-tight leading-tight mb-6 text-gray-900">Bridging <span class="gradient-text-dual">business</span> &amp; <span class="gradient-text">technology</span></h2>
+                    <div class="space-y-4 text-gray-500 leading-relaxed text-[15px]">
+                        <p>I'm a Business Information Systems graduate from Helwan University with a GPA of <span class="text-brand-700 font-semibold">3.93/4.0</span>. My unique strength lies at the intersection of <span class="text-crm-700 font-semibold">CRM systems</span>, <span class="text-brand-700 font-semibold">low-code platforms</span>, and <span class="text-fuchsia-600 font-semibold">frontend development</span>.</p>
+                        <p>I have hands-on experience designing <span class="text-crm-700 font-semibold">model-driven applications using Microsoft Dataverse</span>, building dashboards with <span class="text-crm-700 font-semibold">Power BI</span>, automating workflows with <span class="text-crm-700 font-semibold">Power Automate</span>, and creating responsive web apps with <span class="text-brand-700 font-semibold">React.js</span>.</p>
+                        <p>I excel at translating complex business requirements into practical, user-friendly digital solutions that drive real results.</p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 mt-8 stagger">
+                        <div class="reveal card p-4" style="border-radius:16px;"><div class="text-[10px] text-gray-400 uppercase tracking-wider font-bold mb-1-5">Email</div><div class="text-sm font-semibold text-gray-800 flex items-center gap-2"><span class="iconify text-brand-500" data-icon="lucide:mail" data-width="14"></span>hala.moh.samhan</div></div>
+                        <div class="reveal card p-4" style="border-radius:16px;"><div class="text-[10px] text-gray-400 uppercase tracking-wider font-bold mb-1-5">Phone</div><div class="text-sm font-semibold text-gray-800 flex items-center gap-2"><span class="iconify text-brand-500" data-icon="lucide:phone" data-width="14"></span>+20 109 959 4488</div></div>
+                        <div class="reveal card p-4" style="border-radius:16px;"><div class="text-[10px] text-gray-400 uppercase tracking-wider font-bold mb-1-5">Degree</div><div class="text-sm font-semibold text-gray-800 flex items-center gap-2"><span class="iconify text-brand-500" data-icon="lucide:graduation-cap" data-width="14"></span>B.Sc. Business Info Systems</div></div>
+                        <div class="reveal card p-4" style="border-radius:16px;"><div class="text-[10px] text-gray-400 uppercase tracking-wider font-bold mb-1-5">Languages</div><div class="text-sm font-semibold text-gray-800 flex items-center gap-2"><span class="iconify text-brand-500" data-icon="lucide:globe" data-width="14"></span>Arabic · English</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise -->
+    <section id="expertise" class="relative py-24 md:py-32 bg-gradient-to-b from-brand-50-50 to-crm-50-30 overflow-hidden">
+        <div class="blob w-[400px] h-[400px] bg-crm-100 -top-40 left-0"></div>
+        <div class="blob w-[400px] h-[400px] bg-brand-100 -bottom-40 right-0"></div>
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="reveal text-center mb-16">
+                <div class="section-label justify-center mb-4">Expertise</div>
+                <h2 class="font-space text-3xl md:text-4xl font-bold tracking-tight text-gray-900">Two pillars of my <span class="gradient-text-dual">skill set</span></h2>
+                <p class="text-gray-500 max-w-lg mx-auto mt-4 text-[15px]">Equally strong in business solutions and frontend engineering — a rare combination.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- CRM / Power Platform -->
+                <div class="reveal-right">
+                    <div class="card-crm card p-8 h-full">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-crm-500 to-crm-600 flex items-center justify-center shadow-lg shadow-cyan-200">
+                                <span class="iconify text-white" data-icon="mdi:microsoft-dynamics-365" data-width="24"></span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900">CRM &amp; Power Platform</h3>
+                                <p class="text-xs text-crm-600 font-semibold">Business Solutions</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-8 leading-relaxed">Designing model-driven apps, automating workflows, and building business intelligence dashboards.</p>
+                        <div class="grid grid-cols-2 gap-3 mb-8">
+                            <div class="crm-feature">
+                                <div class="icon-wrap mb-3"><span class="iconify text-white" data-icon="mdi:microsoft-dynamics-365" data-width="20"></span></div>
+                                <div class="text-sm font-bold text-gray-800">Dynamics 365</div>
+                                <div class="text-[11px] text-gray-400 mt-0-5">CRM Configuration</div>
+                            </div>
+                            <div class="crm-feature">
+                                <div class="icon-wrap mb-3"><span class="iconify text-white" data-icon="mdi:powerapps" data-width="20"></span></div>
+                                <div class="text-sm font-bold text-gray-800">Power Apps</div>
+                                <div class="text-[11px] text-gray-400 mt-0-5">Model-Driven Apps</div>
+                            </div>
+                            <div class="crm-feature">
+                                <div class="icon-wrap mb-3"><span class="iconify text-white" data-icon="mdi:database" data-width="20"></span></div>
+                                <div class="text-sm font-bold text-gray-800">Dataverse</div>
+                                <div class="text-[11px] text-gray-400 mt-0-5">Data Management</div>
+                            </div>
+                            <div class="crm-feature">
+                                <div class="icon-wrap mb-3"><span class="iconify text-white" data-icon="mdi:microsoft-power-bi" data-width="20"></span></div>
+                                <div class="text-sm font-bold text-gray-800">Power BI</div>
+                                <div class="text-[11px] text-gray-400 mt-0-5">Dashboards &amp; Reports</div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="skill-item"><div class="flex justify-between mb-2"><span class="text-sm font-semibold text-gray-700">MS Dynamics 365 CRM</span><span class="text-xs font-bold text-crm-600">85%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill cyan-bar" data-width="85%"></div></div></div>
+                            <div class="skill-item"><div class="flex justify-between mb-2"><span class="text-sm font-semibold text-gray-700">Power Apps / Dataverse</span><span class="text-xs font-bold text-crm-600">80%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill cyan-bar" data-width="80%"></div></div></div>
+                            <div class="skill-item"><div class="flex justify-between mb-2"><span class="text-sm font-semibold text-gray-700">Power BI</span><span class="text-xs font-bold text-crm-600">80%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill cyan-bar" data-width="80%"></div></div></div>
+                            <div class="skill-item"><div class="flex justify-between mb-2"><span class="text-sm font-semibold text-gray-700">Power Automate</span><span class="text-xs font-bold text-crm-600">75%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill cyan-bar" data-width="75%"></div></div></div>
+                            <div class="skill-item"><div class="flex justify-between mb-2"><span class="text-sm font-semibold text-gray-700">SQL</span><span class="text-xs font-bold text-crm-600">80%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill cyan-bar" data-width="80%"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="reveal-left">
+                    <div class="card p-8 h-full">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-500 to-fuchsia-500 flex items-center justify-center shadow-lg shadow-brand-200">
+                                <span class="iconify text-white" data-icon="lucide:code-2" data-width="24"></span>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900">Frontend Development</h3>
+                                <p class="text-xs text-brand-600 font-semibold">Web Applications</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-8 leading-relaxed">Building responsive, performant web applications with modern JavaScript frameworks and clean UI.</p>
+                        <div class="flex flex-wrap gap-2-5 mb-8 stagger">
+                            <span class="reveal tag">React.js</span>
+                            <span class="reveal tag">JavaScript ES6+</span>
+                            <span class="reveal tag">HTML5</span>
+                            <span class="reveal tag">CSS3</span>
+                            <span class="reveal tag">Responsive Design</span>
+                            <span class="reveal tag">UI/UX Fundamentals</span>
+                            <span class="reveal tag">REST APIs</span>
+                            <span class="reveal tag">Git / GitHub</span>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="skill-item"><div class="flex justify-between mb-2"><span class="text-sm font-semibold text-gray-700">HTML5 / CSS3</span><span class="text-xs font-bold text-brand-600">95%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill purple-bar" data-width="95%"></div></div></div>
+                            <div class="skill-item"><div class="flex justify-between mb-2"><span class="text-sm font-semibold text-gray-700">JavaScript</span><span class="text-xs font-bold text-brand-600">85%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill fuchsia-bar" data-width="85%"></div></div></div>
+                            <div class="skill-item"><div class="flex justify-between mb-2"><span class="text-sm font-semibold text-gray-700">React.js</span><span class="text-xs font-bold text-brand-600">85%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill purple-bar" data-width="85%"></div></div></div>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-gray-100">
+                            <h4 class="text-[10px] text-gray-400 uppercase tracking-widest font-bold mb-4">Professional Skills</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tag text-[11px]">Business Analysis</span>
+                                <span class="tag text-[11px]">Requirements Analysis</span>
+                                <span class="tag text-[11px]">Financial Analysis</span>
+                                <span class="tag text-[11px]">Cost Accounting</span>
+                                <span class="tag text-[11px]">Problem Solving</span>
+                                <span class="tag text-[11px]">Teamwork</span>
+                                <span class="tag text-[11px]">Communication</span>
+                                <span class="tag text-[11px]">Marketing</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-6 border-t border-gray-100">
+                            <h4 class="text-[10px] text-gray-400 uppercase tracking-widest font-bold mb-3">Languages</h4>
+                            <div class="flex gap-2">
+                                <span class="text-xs font-bold text-white bg-brand-600 px-3 py-1-5 rounded-full">Arabic — Native</span>
+                                <span class="text-xs font-bold text-white bg-fuchsia-500 px-3 py-1-5 rounded-full">English — Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="relative py-24 md:py-32 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="reveal text-center mb-16">
+                <div class="section-label justify-center mb-4">Experience</div>
+                <h2 class="font-space text-3xl md:text-4xl font-bold tracking-tight text-gray-900">Professional <span class="gradient-text-dual">journey</span></h2>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="relative">
+                    <div class="absolute left-3px top-6 bottom-6" style="left:6px;width:2px;background:linear-gradient(to bottom,#67e8f9,#e9d5ff,transparent);border-radius:9999px;"></div>
+                    <div class="space-y-8">
+                        <div class="reveal timeline-item relative pl-10">
+                            <div class="timeline-dot dot-cyan absolute left-0 top-7"></div>
+                            <div class="card p-6 md:p-8">
+                                <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+                                    <div><h3 class="text-base font-bold text-gray-900">Frontend Development Trainee</h3><p class="text-sm text-brand-600 font-semibold mt-0-5">Information Technology Institute (ITI)</p></div>
+                                    <span class="text-xs font-bold text-brand-600 bg-brand-50 px-3 py-1-5 rounded-full border border-brand-100">Aug 2025 – Sep 2025</span>
+                                </div>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2-5 text-sm text-gray-500"><span class="iconify text-brand-500 mt-0-5 shrink-0" data-icon="lucide:check-circle-2" data-width="15"></span>Intensive training in HTML, CSS, JavaScript, React.js and responsive design.</li>
+                                    <li class="flex items-start gap-2-5 text-sm text-gray-500"><span class="iconify text-fuchsia-500 mt-0-5 shrink-0" data-icon="lucide:check-circle-2" data-width="15"></span>Built user interfaces and responsive web components.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="reveal timeline-item relative pl-10">
+                            <div class="timeline-dot absolute left-0 top-7"></div>
+                            <div class="card p-6 md:p-8">
+                                <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+                                    <div><h3 class="text-base font-bold text-gray-900">GIS Intern</h3><p class="text-sm text-crm-600 font-semibold mt-0-5">Egypt Gas Company</p></div>
+                                    <span class="text-xs font-bold text-crm-600 bg-crm-50 px-3 py-1-5 rounded-full border border-crm-100">Jun 2024 – Aug 2024</span>
+                                </div>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2-5 text-sm text-gray-500"><span class="iconify text-crm-500 mt-0-5 shrink-0" data-icon="lucide:check-circle-2" data-width="15"></span>Compiled and analyzed spatial data for monthly reports.</li>
+                                    <li class="flex items-start gap-2-5 text-sm text-gray-500"><span class="iconify text-crm-400 mt-0-5 shrink-0" data-icon="lucide:check-circle-2" data-width="15"></span>Supported data mapping, monitoring, and departmental audits.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="reveal timeline-item relative pl-10">
+                            <div class="timeline-dot dot-cyan absolute left-0 top-7"></div>
+                            <div class="card p-6 md:p-8">
+                                <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+                                    <div><h3 class="text-base font-bold text-gray-900">Banking Trainee</h3><p class="text-sm text-crm-600 font-semibold mt-0-5">Commercial International Bank (CIB)</p></div>
+                                    <span class="text-xs font-bold text-crm-600 bg-crm-50 px-3 py-1-5 rounded-full border border-crm-100">Jul 2023</span>
+                                </div>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2-5 text-sm text-gray-500"><span class="iconify text-crm-500 mt-0-5 shrink-0" data-icon="lucide:check-circle-2" data-width="15"></span>Gained exposure to credit evaluation and loan application processes.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="reveal timeline-item relative pl-10">
+                            <div class="timeline-dot absolute left-0 top-7"></div>
+                            <div class="card p-6 md:p-8">
+                                <div class="flex flex-wrap items-start justify-between gap-3 mb-4">
+                                    <div><h3 class="text-base font-bold text-gray-900">Media Team Member</h3><p class="text-sm text-fuchsia-600 font-semibold mt-0-5">3Dose Organization</p></div>
+                                    <span class="text-xs font-bold text-fuchsia-600 bg-fuchsia-50 px-3 py-1-5 rounded-full border border-fuchsia-100">2021</span>
+                                </div>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2-5 text-sm text-gray-500"><span class="iconify text-fuchsia-500 mt-0-5 shrink-0" data-icon="lucide:check-circle-2" data-width="15"></span>Edited visual content and supported social media campaigns.</li>
+                                    <li class="flex items-start gap-2-5 text-sm text-gray-500"><span class="iconify text-pink-500 mt-0-5 shrink-0" data-icon="lucide:check-circle-2" data-width="15"></span>Contributed to event promotion and audience engagement initiatives.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="relative py-24 md:py-32 bg-gradient-to-b from-white to-brand-50-30 overflow-hidden">
+        <div class="blob w-[500px] h-[400px] bg-fuchsia-100 bottom-0 right-0"></div>
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="reveal text-center mb-16">
+                <div class="section-label justify-center mb-4">Projects</div>
+                <h2 class="font-space text-3xl md:text-4xl font-bold tracking-tight text-gray-900">Featured <span class="gradient-text">work</span></h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="reveal project-card group">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://i.pinimg.com/736x/ef/f9/6a/eff96a2094aa44b416af07480ca09e1d.jpg" alt="Agency Website" class="project-img w-full h-full object-cover transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-white via-white-20 to-transparent"></div>
+                        <div class="absolute top-4 left-4"><span class="text-[10px] font-bold uppercase tracking-wider text-white bg-brand-600 px-3 py-1-5 rounded-full shadow-lg">ITI Project</span></div>
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 hover:text-brand-700 transition-colors font-space">Agency Website</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed mb-5">Designed and developed a fully responsive agency website using React.js and CSS with modern UI patterns.</p>
+                        <div class="flex flex-wrap gap-2 mb-5"><span class="tag text-[11px]">React.js</span><span class="tag text-[11px]">CSS</span><span class="tag text-[11px]">Responsive</span></div>
+                        <a href="https://agency-website-56jk531gr-halasamhans-projects.vercel.app/" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-brand-600 hover:text-brand-700 transition-colors">Live Demo<span class="iconify project-arrow transition-transform duration-300" data-icon="lucide:arrow-up-right" data-width="15"></span></a>
+                    </div>
+                </div>
+                <div class="reveal project-card group">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://i.pinimg.com/1200x/65/42/3f/65423f429769fc5b2d9fb2adc31137a4.jpg" alt="EasySakan" class="project-img w-full h-full object-cover transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-white via-white-20 to-transparent"></div>
+                        <div class="absolute top-4 left-4"><span class="text-[10px] font-bold uppercase tracking-wider text-white bg-fuchsia-500 px-3 py-1-5 rounded-full shadow-lg">Graduation Project</span></div>
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 hover:text-fuchsia-600 transition-colors font-space">EasySakan</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed mb-5">Real estate &amp; service booking platform with location-based features, booking workflows, and service integration.</p>
+                        <div class="flex flex-wrap gap-2 mb-5"><span class="tag text-[11px]">React.js</span><span class="tag text-[11px]">HTML</span><span class="tag text-[11px]">CSS</span><span class="tag text-[11px]">JavaScript</span><span class="tag text-[11px]">UI/UX</span></div>
+                        <div class="flex items-center gap-2 text-xs text-gray-400"><span class="iconify" data-icon="lucide:users" data-width="13"></span>Team project — Frontend, Analysis &amp; UI/UX</div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal text-center mt-12"><a href="https://github.com/Halasamhan/" target="_blank" class="btn-outline"><span class="iconify" data-icon="mdi:github" data-width="18"></span>View More on GitHub</a></div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="relative py-24 md:py-32 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="reveal max-w-2xl mx-auto">
+                <div class="text-center mb-12">
+                    <div class="section-label justify-center mb-4">Education</div>
+                    <h2 class="font-space text-3xl md:text-4xl font-bold tracking-tight text-gray-900">Academic <span class="gradient-text">background</span></h2>
+                </div>
+                <div class="reveal card p-8 md:p-10 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-60 h-60 bg-gradient-to-br from-brand-100-50 to-crm-100-30 rounded-full blur-3xl -translate-y-1\/2 translate-x-1\/2"></div>
+                    <div class="relative">
+                        <div class="mb-6"><h3 class="text-xl font-bold text-gray-900 font-space mb-1">B.Sc. Business Information Systems</h3><p class="text-sm text-brand-600 font-semibold">Helwan University — Cairo, Egypt</p></div>
+                        <div class="flex items-center gap-6 mb-8 p-5 rounded-2xl bg-gradient-to-r from-brand-600 via-fuchsia-600 to-crm-600 text-white">
+                            <div class="text-center"><div class="text-4xl font-space font-bold">3.93</div><div class="text-[10px] text-white/70 mt-1 uppercase tracking-wider font-bold">/ 4.00</div></div>
+                            <div class="w-px h-14" style="background:rgba(255,255,255,0.2);"></div>
+                            <div><div class="text-sm font-bold">Excellent — Highest Honors</div><div class="text-xs text-white/70 mt-0-5">Top of class</div></div>
+                        </div>
+                        <div>
+                            <h4 class="text-[10px] text-gray-400 uppercase tracking-widest font-bold mb-4">Key Areas of Study</h4>
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                                <div class="flex items-center gap-2-5 text-sm text-gray-600"><span class="w-2 h-2 rounded-full bg-crm-500 shrink-0"></span>Business Analysis</div>
+                                <div class="flex items-center gap-2-5 text-sm text-gray-600"><span class="w-2 h-2 rounded-full bg-crm-500 shrink-0"></span>Requirements Analysis</div>
+                                <div class="flex items-center gap-2-5 text-sm text-gray-600"><span class="w-2 h-2 rounded-full bg-crm-500 shrink-0"></span>Financial Analysis</div>
+                                <div class="flex items-center gap-2-5 text-sm text-gray-600"><span class="w-2 h-2 rounded-full bg-brand-500 shrink-0"></span>Database Management</div>
+                                <div class="flex items-center gap-2-5 text-sm text-gray-600"><span class="w-2 h-2 rounded-full bg-brand-500 shrink-0"></span>Systems Analysis</div>
+                                <div class="flex items-center gap-2-5 text-sm text-gray-600"><span class="w-2 h-2 rounded-full bg-brand-500 shrink-0"></span>ERP Systems</div>
+                                <div class="flex items-center gap-2-5 text-sm text-gray-600"><span class="w-2 h-2 rounded-full bg-fuchsia-500 shrink-0"></span>E-Commerce</div>
+                                <div class="flex items-center gap-2-5 text-sm text-gray-600"><span class="w-2 h-2 rounded-full bg-fuchsia-500 shrink-0"></span>Cost Accounting</div>
+                                <div class="flex items-center gap-2-5 text-sm text-gray-600"><span class="w-2 h-2 rounded-full bg-fuchsia-500 shrink-0"></span>Marketing</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="relative py-24 md:py-32 bg-gradient-to-b from-white to-brand-50/40 overflow-hidden">
+        <div class="blob w-[400px] h-[400px] bg-brand-100 top-0 left-1/2"></div>
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="reveal text-center mb-16">
+                <div class="section-label justify-center mb-4">Contact</div>
+                <h2 class="font-space text-3xl md:text-4xl font-bold tracking-tight text-gray-900">Let's <span class="gradient-text-warm">connect</span></h2>
+                <p class="text-gray-500 max-w-lg mx-auto mt-4 text-[15px]">Have a project in mind or want to discuss an opportunity? I'd love to hear from you.</p>
+            </div>
+            <div class="grid md:grid-cols-5 gap-8 max-w-4xl mx-auto">
+                <div class="md:col-span-2 reveal-left space-y-4">
+                    <div class="card p-5" style="border-radius:16px;">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center"><span class="iconify text-brand-600" data-icon="lucide:mail" data-width="18"></span></div>
+                            <div><div class="text-[10px] text-gray-400 uppercase tracking-wider font-bold">Email</div><div class="text-sm font-semibold text-gray-800">hala.moh.samhan@gmail.com</div></div>
+                        </div>
+                    </div>
+                    <div class="card p-5" style="border-radius:16px;">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-10 h-10 rounded-xl bg-crm-50 flex items-center justify-center"><span class="iconify text-crm-600" data-icon="lucide:phone" data-width="18"></span></div>
+                            <div><div class="text-[10px] text-gray-400 uppercase tracking-wider font-bold">Phone</div><div class="text-sm font-semibold text-gray-800">+20 109 959 4488</div></div>
+                        </div>
+                    </div>
+                    <div class="card p-5" style="border-radius:16px;">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-10 h-10 rounded-xl bg-fuchsia-50 flex items-center justify-center"><span class="iconify text-fuchsia-600" data-icon="lucide:map-pin" data-width="18"></span></div>
+                            <div><div class="text-[10px] text-gray-400 uppercase tracking-wider font-bold">Location</div><div class="text-sm font-semibold text-gray-800">Cairo, Egypt</div></div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 pt-2">
+                        <a href="https://github.com/Halasamhan/" target="_blank" class="social-icon"><span class="iconify" data-icon="mdi:github" data-width="18"></span></a>
+                        <a href="https://linkedin.com/" target="_blank" class="social-icon"><span class="iconify" data-icon="mdi:linkedin" data-width="18"></span></a>
+                    </div>
+                </div>
+                <div class="md:col-span-3 reveal-right">
+                    <form id="contactForm" class="card p-6 md:p-8" style="border-radius:20px;">
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-[10px] text-gray-400 uppercase tracking-widest font-bold mb-2">Your Name</label>
+                                <input type="text" name="name" class="input-field" placeholder="John Doe" required>
+                            </div>
+                            <div>
+                                <label class="block text-[10px] text-gray-400 uppercase tracking-widest font-bold mb-2">Email Address</label>
+                                <input type="email" name="email" class="input-field" placeholder="john@example.com" required>
+                            </div>
+                            <div>
+                                <label class="block text-[10px] text-gray-400 uppercase tracking-widest font-bold mb-2">Message</label>
+                                <textarea name="message" rows="5" class="input-field" style="resize:vertical;" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-full justify-center"><span>Send Message</span><span class="iconify" data-icon="lucide:send" data-width="15"></span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="text-sm text-gray-400">&copy; 2025 Hala Samhan. All rights reserved.</div>
+            <div class="flex items-center gap-2 text-sm text-gray-400">Built with <span class="iconify text-fuchsia-500" data-icon="lucide:heart" data-width="14"></span> &amp; <span class="font-semibold text-brand-600">pure CSS</span></div>
+        </div>
+    </footer>
+
+    <script src="Portfolio.js"></script>
+</body>
+</html>
